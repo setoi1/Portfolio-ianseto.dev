@@ -1,14 +1,22 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Trebuchet MS", 'Futura';
   overflow-x: hidden;
-  padding-top: 7vh;
   color: white;
   background-color: #181818;
 }
 
-/*-------------------------/*
-/* Page fade in styling */
-/*-------------------------*/
+main {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 @keyframes fadeInAnimation {
   0% {
@@ -19,249 +27,30 @@ body {
   }
 }
 
-/*-------------------------/*
-/* Navbar styling */
-/*-------------------------*/
-
-.navbar {
-
-}
-  .navbar-nav {
-
-    background-color: black;
-  }
-
-    .navbar-navlinks {
-      display: flex;
-    }
-
-      .navbar-icon {
-        padding-left: 48px;
-        padding-right: 24px;
-      }
-
-      .navbar-contacts {
-        display: flex;
-        padding-left: 24px;
-      }
-
-      .navbar-contacts-icons {
-        margin-right: 24px;
-      }
-
-      .navbar-navlink {
-        display: flex;
-        align-items: center;
-        padding-left: 24px;
-        padding-right: 24px;
-        font-size: 20px;
-        color: white;
-        transition: 250ms;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      .navbar-navlink:hover, .navbar-navlink:active {
-        color: rgb(163, 161, 161);
-      }
-
-
-
-/*-------------------------*/
-/* Page header styling */
-/*-------------------------*/
-
-.section-header-text {
-  margin-left: 25%;
-  margin-right: 25%;
-  font-size: calc(10px + 2vmin);
-}
-
-.section-header-text h3 {
-  display: flex;
-  justify-content: center;
-}
-
-/*-------------------------*/
-/* Landing page styling */
-/*-------------------------*/
-
-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  opacity: .50;
-}
-
-.landing-page {
+.page-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  align-items: center;
 }
 
-  .landing-page .section-header-text {
-    margin-top: 15%;
-  }
-
-  .landing-page .section-header-text h3 {
-    display: flex;
-    justify-content: center;
-  }
-
-
-  .landing-page .landing-button {
-    margin: auto;
-    width: 75px;
-    color: white;
-    border-color: white;
-  }
-
-/*-------------------------*/
-/* About page styling */
-/*-------------------------*/
-
-.about-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 10%;
-  text-align: left;
-
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-} 
-
-  .about-description p {
-    font-size: 25px;
-  }
-
-/*-------------------------*/
-/* Projects page styling */
-/*-------------------------*/
-
-.projects-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+.page-header-text {
+  margin-top: 12.5%;
+  font-size: calc(32px + 2vmin);
 }
 
-  .projects-container {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
 
-    .projects-container-items {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-      .project-grid-container {
-        display: flex;
-        justify-content: center;
-      }
-
-        .project-row-container {
-          display: flex;
-          justify-content: center;
-        }
-
-          .project-card-container {
-            display: flex;
-            flex-direction: column;
-            width: 256px;
-            height: 384px;
-          }
-          
-            .project-card-actions {
-              margin-top: auto;
-            }
-
-/*-------------------------*/
-/* Contacts page styling */
-/*-------------------------*/
-
-.contacts-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 15%;
-
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-  .contacts-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-right: 40px;
-  }
-
-    .contacts-list-item {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      justify-content: center;
-      margin-left: 25px;
-      margin-right: 25px;
-    }
-
-      .contacts-item-link {
-        display: flex;
-        color: white;
-        text-decoration: none;
-      }
-
-      .contacts-list-item:link {
-        text-decoration: none;
-      }
-
-      .contacts-list-item:visited {
-        text-decoration: none;
-      }
-
-      .github-icon {
-        padding-right: 2px;
-      }
-
-/*-------------------------*/
-/* Contacts page styling */
-/*-------------------------*/
-
-.footer-section {
-  height: 10%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-}
-  .footer-text {
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
 /*-------------------------*/
 /* Media query styling  */
 /*-------------------------*/
 
 @media screen and (max-width: 480px) {
+
+  main {
+    margin-top: 56px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
   .navbar-nav {
     display: flex;
@@ -294,33 +83,34 @@ video {
     }
 
 
+  /*-------------------------*/
+  /* Page header styling */
+  /*-------------------------*/
 
-  .landing-page {
-    display: flex;
-    flex-direction: column;
+  .page-header-text {
+    margin-top: 12.5%;
+    font-size: calc(32px + 2vmin);
   }
 
-    .landing-page .section-header-text {
-      margin-top: 50%;
-    }
+  .page-container {
+    margin-bottom: 12.5%;
+  }
 
-
+  .landing-page .page-header-text {
+    margin-top: 50%;
+  }
 
   .about-page {
     display: flex;
     flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
+
   }
 
-    .about-description {
-      
+    .about-description p {
+      font-size: 20px;
     }
-
-      .about-description p {
-        font-size: 20px;
-      }
 
 
 

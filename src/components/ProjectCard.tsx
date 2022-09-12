@@ -1,7 +1,7 @@
 import React from 'react';
 import { Paper, Card, CardContent, CardActions, Button } from '@material-ui/core';
 
-const ProjectCard = (props) => {
+const ProjectCard = (props: any) => {
   return (
     <Paper elevation={12} style={{backgroundColor: "#212121"}}>
       <Card className="project-card-container" style={{backgroundColor: "#212121"}}>

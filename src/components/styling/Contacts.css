@@ -1,0 +1,43 @@
+.contacts-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+  .contacts-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-right: 40px;
+  }
+
+    .contacts-list-item {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+      .contacts-item-link {
+        display: flex;
+        color: white;
+        text-decoration: none;
+      }
+
+      .contacts-list-item:link {
+        text-decoration: none;
+      }
+
+      .contacts-list-item:visited {
+        text-decoration: none;
+      }
+
+      .github-icon {
+        padding-right: 2px;
+      }

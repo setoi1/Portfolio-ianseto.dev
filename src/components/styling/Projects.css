@@ -1,0 +1,44 @@
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+  .projects-page .page-container .page-header-text {
+    margin-top: 5%;
+  }
+
+  .projects-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  
+
+    .projects-container-items {
+      justify-content: center;
+    }
+
+      .project-grid-container {
+        justify-content: center;
+      }
+
+        .project-row-container {
+          justify-content: center;
+        }
+
+          .project-card-container {
+            display: flex;
+            flex-direction: column;
+            width: 16rem;
+            height: 24rem;
+          }
+          
+            .project-card-actions {
+              margin-top: auto;
+            }

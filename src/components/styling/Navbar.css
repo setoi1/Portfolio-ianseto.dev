@@ -1,0 +1,41 @@
+.navbar {
+  background-color: black;
+}
+  .navbar-nav {
+
+    background-color: black;
+  }
+
+    .navbar-navlinks {
+      display: flex;
+    }
+
+      .navbar-icon {
+        padding-left: 48px;
+        padding-right: 24px;
+      }
+
+      .navbar-contacts {
+        display: flex;
+        padding-left: 24px;
+      }
+
+      .navbar-contacts-icons {
+        margin-right: 24px;
+      }
+
+      .navbar-navlink {
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-size: 20px;
+        color: white;
+        transition: 250ms;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .navbar-navlink:hover, .navbar-navlink:active {
+        color: rgb(163, 161, 161);
+      }
