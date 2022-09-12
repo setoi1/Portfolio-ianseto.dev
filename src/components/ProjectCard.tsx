@@ -1,4 +1,3 @@
-import React from 'react';
 import { Paper, Card, CardContent, CardActions, Button } from '@material-ui/core';
 
 const ProjectCard = (props: any) => {

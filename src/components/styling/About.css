@@ -16,3 +16,19 @@
   .about-description p {
     font-size: 1.5rem;
   }
+
+
+
+@media screen and (max-width: 480px) {
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
+    .about-description p {
+      font-size: 20px;
+    }
+}

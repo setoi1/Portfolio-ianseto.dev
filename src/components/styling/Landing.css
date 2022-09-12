@@ -13,3 +13,13 @@ video {
     color: white;
     border-color: white;
   }
+
+
+
+@media screen and (max-width: 480px) {
+
+  .landing-page .page-header-text {
+    margin-top: 50%;
+  }
+  
+}

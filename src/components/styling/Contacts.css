@@ -41,3 +41,33 @@
       .github-icon {
         padding-right: 2px;
       }
+
+
+
+@media screen and (max-width: 480px) {
+
+  .contacts-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+  }
+
+    .contacts-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style-type: none;
+      margin-left: 25%;
+      margin-right: 25%; 
+    }
+
+      .contacts-list-item {
+        display: flex;
+        text-decoration: none;
+      }
+
+        .contacts-item-link-github {
+          margin-left: 25px;
+        }
+        
+}

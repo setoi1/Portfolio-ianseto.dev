@@ -2,18 +2,12 @@
   background-color: black;
 }
   .navbar-nav {
-
     background-color: black;
   }
 
     .navbar-navlinks {
       display: flex;
     }
-
-      .navbar-icon {
-        padding-left: 48px;
-        padding-right: 24px;
-      }
 
       .navbar-contacts {
         display: flex;
@@ -27,8 +21,8 @@
       .navbar-navlink {
         display: flex;
         align-items: center;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 2rem;
+        padding-right: 2rem;
         font-size: 20px;
         color: white;
         transition: 250ms;
@@ -39,3 +33,37 @@
       .navbar-navlink:hover, .navbar-navlink:active {
         color: rgb(163, 161, 161);
       }
+
+
+
+@media screen and (max-width: 480px) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-main-icon {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-navlink {
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 20px;
+    color: white;
+    transition: 250ms;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .navbar-contacts {
+    padding-left: 6px;
+  }
+
+    .navbar-contacts-icons {
+      margin-right: 6px;
+    }
+}
