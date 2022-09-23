@@ -34,7 +34,7 @@ const Projects = () => {
     <main className="projects-page">
       <div className="page-container">
         <h3 className="page-header-text">Projects</h3>
-        <Grid className="projects-container-items" container spacing={10} style={{margin: 0,width: '100%',}}>
+        <Grid className="projects-container-items" container spacing={10} style={{ margin: 0, width: '100%' }}>
         {projects.map((project) => (
           <Grid item>
             <ProjectCard 

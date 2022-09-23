@@ -24,7 +24,7 @@ const Navbar = () => {
         "text": "Contacts",
         "link": "/contacts"
       },
-    ]
+    ];
 
   return (
     <AppBar className="navbar" style={{ backgroundColor: "black" }}>

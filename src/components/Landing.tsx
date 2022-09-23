@@ -15,7 +15,7 @@ const Landing = () => {
       <div className="page-container">
         {mobile === false &&
           <video autoPlay={true} loop={true} muted id="myVideo">
-            <source src={process.env.PUBLIC_URL + '/video.mp4'} type="video/mp4"/>
+            <source src={process.env.PUBLIC_URL + '/landingvideo.mp4'} type="video/mp4"/>
           </video>
         }
         <h3 className="page-header-text">Explore</h3>
