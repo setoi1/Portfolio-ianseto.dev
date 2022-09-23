@@ -4,13 +4,6 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  
-  margin-left: 10%;
-  margin-right: 10%;
-
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 } 
 
   .about-description p {

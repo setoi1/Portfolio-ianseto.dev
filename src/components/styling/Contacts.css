@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
   .contacts-list {

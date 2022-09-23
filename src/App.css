@@ -12,7 +12,8 @@ body {
 main {
   margin-top: 4rem;
   margin-bottom: 4rem;
-
+  margin-left: 10%;
+  margin-right: 10%;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
