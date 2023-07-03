@@ -1,0 +1,29 @@
+.projects-section {
+  padding-top: 7.5vw;
+  margin-bottom: 7.5vw;
+}
+
+.projects-header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+}
+
+  .projects-container-items {
+    justify-content: center;
+  }
+
+    .project-grid-container {
+      justify-content: center;
+    }
+
+      .project-row-container {
+        justify-content: center;
+      }
+ 
+
+
+@media screen and (max-width: 480px) {
+  
+}

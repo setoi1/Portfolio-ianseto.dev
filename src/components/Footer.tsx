@@ -1,9 +1,9 @@
-const Footer = () => {
-  return (
-    <footer className="footer-section">
-      <h3 className="footer-header">Built by Ian Seto</h3>
-    </footer>
-  );
-}
+import './styles/Footer.css';
 
-export default Footer;
+export default function Footer() {
+  return (
+    <>
+      <footer>Footer</footer>
+    </>
+  );
+};

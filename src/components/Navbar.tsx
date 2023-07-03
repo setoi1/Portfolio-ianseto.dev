@@ -1,52 +1,41 @@
-import './styling/Navbar.css';
-
-import { Link } from 'react-router-dom';
-import { AppBar, Toolbar } from '@material-ui/core';
-
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const Navbar = () => {
-    const navLinks = [
-      {
-        "text": "Home",
-        "link": "/"
-      },
-      {
-        "text": "About",
-        "link": "/about"
-      },
-      {
-        "text": "Projects",
-        "link": "/projects"
-      },
-      {
-        "text": "Contacts",
-        "link": "/contacts"
-      },
-    ];
+import './styles/Navbar.css';
+
+export default function Navbar() {
+  const navLinks = [
+    {
+      "text": "About",
+      "section": "#about"
+    },
+    {
+      "text": "Experience",
+      "section": "#experience"
+    },
+    {
+      "text": "Projects",
+      "section": "#projects"
+    },
+    {
+      "text": "Contacts",
+      "section": "#contacts"
+    },
+  ];
 
   return (
-    <AppBar className="navbar" style={{ backgroundColor: "black" }}>
-      <Toolbar className="navbar-nav">
-        <nav className="navbar-navlinks">
-          {navLinks.map((navlink) => (
-              <Link className="navbar-navlink" to={navlink.link}>
-                {navlink.text}
-              </Link>
-          ))}
-          <div className="navbar-contacts">
-            <a className="contacts-item-link" href="https://www.linkedin.com/in/ianseto/" rel="noreferrer" target="_blank">
-              <LinkedInIcon className="navbar-contacts-icons" />
-            </a>
-            <a className="contacts-item-link" href="https://www.github.com/setoi1" rel="noreferrer" target="_blank">
-              <GitHubIcon className="navbar-contacts-icons" />
-            </a>
-          </div>
+    <>
+      <header>
+        <nav className="navbar">
+          <ul className="nav-list">
+            {navLinks.map((navlink) => (
+              <li className="nav-item"><a className="nav-link" href={navlink.section}>{navlink.text}</a></li>
+            ))}
+            <li className="nav-item"><a className="nav-link" href="https://www.linkedin.com/in/ianseto/" rel="noreferrer" target="_blank"><LinkedInIcon /></a></li>
+            <li className="nav-item"><a className="nav-link" href="https://www.github.com/setoi1" rel="noreferrer" target="_blank"><GitHubIcon /></a></li>
+          </ul>
         </nav>
-      </Toolbar>
-    </AppBar>
+      </header>
+    </>
   );
-}
-
-export default Navbar;
+};

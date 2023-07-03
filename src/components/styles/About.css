@@ -1,0 +1,29 @@
+.about-section {
+  height: 100vh;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  margin-right: 50vw;
+}
+
+.about-headline {
+  font-size: 2em;
+}
+
+.about-introduction {
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .about-section {
+
+  }
+
+  .about-section .section-header-text {
+
+  }
+
+  .about-section p {
+    margin-right: 0;
+  }
+}
