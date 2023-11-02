@@ -1,36 +1,15 @@
-.project-item-container {
-  opacity: .85;
-  transition-duration: .250s;
+.card {
+  position: relative;
+  height: 24rem;
+  width: 16rem;
+  background-color: rgb(18, 29, 63);
+  opacity: .75;
 }
 
-  .project-item-container:hover {
-    opacity: 1;
-    transition-duration: .250s;
-  }
-
-    .project-paper-container {
-      
-    }
-
-      .project-card-container {
-        display: flex;
-        flex-direction: column;
-        width: 16rem;
-        height: 24rem;
-      }
-
-      .card-media {
-        z-index: -1;
-        width: 100%;
-      }
-      
-        .project-card-actions {
-          margin-top: auto;
-        }
-
-        .project-card-link-button {
-          margin-bottom: 1rem;
-        }
+.card:hover {
+  cursor: pointer;
+  opacity: 1;
+}
 
 @media screen and (max-width: 480px) {
   

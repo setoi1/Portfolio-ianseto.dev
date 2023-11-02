@@ -1,15 +1,7 @@
 import { useState } from 'react';
-
 import './styles/SideNavbar.css';
 
 export default function SideNavbar() {
-
-  const [active, setActive] = useState(null);
-
-  function handleScroll() {
-    document.getElementById('');
-  }
-
   return (
     <>
       <nav className='side-navbar'>

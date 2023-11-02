@@ -1,14 +1,16 @@
 .tech-stack-list {
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 2;
   margin-left: 0;
   padding-left: 0;
   list-style: none;
+  row-gap: .50rem;
+  column-gap: .50rem;
 }
 
   .tech-stack-list-item {
-    margin-right: .5rem;
-    padding-top: .5rem;
+    
   }
 
     .tech-stack-item {
@@ -19,10 +21,7 @@
       border-color: blue;
       border-radius: 12px;
       font-size: 1em;
-      padding-top: .25rem;
-      padding-bottom: .25rem;
-      padding-left: .50rem;
-      padding-right: .50rem;
+      padding: .50rem;
       font-weight: 900;
     }
 

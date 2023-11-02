@@ -1,29 +1,31 @@
-.landing-background {
+.landing-section {
   height: 100vh;
-  width: 100vw;
-  z-index: -999;
-  background-image: url('Background.png');
-  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.landing-section {
-  padding-top: 25vh;
-  margin-left: 15vw;
-  margin-right: 50vw;
-}
+  .landing-content {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
 
   .landing-header-text {
+    color: black;
     font-size: 6rem;
     margin-top: 0;
     margin-bottom: 0;
   }
   
   .landing-headline {
+    color: black;
     font-size: 2em;
   }
 
   .landing-introduction {
-    margin-right: 7.5vw;
+    padding-top: 5vh;
+    margin-right: 25vw;
     font-size: 1.5em;
   }
 
@@ -61,29 +63,71 @@
       .github-icon {
         padding-right: 2px;
       }
+
+      .navigate-down {
+        display: flex;
+        justify-content: center;
+        outline: 1px red dashed;
+      }
+
+body {
+  height: 100vh;
+  background: linear-gradient(90deg,#e52e71,#ff8a00);
+}
+
+.slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 22%;
+  top: 21%;
+  width: 500px;
+  height: 500px;
+  background: rgb(238, 216, 51);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%, 100% {
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34% {
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
   
   @media screen and (max-width: 480px) {
-    .landing-section {
-      padding-top: 10vh;
-      margin-left: 10vw;
-      margin-right: 10vw;
-    }
+
+      .landing-content {
+        margin-left: 10vw;
+        margin-right: 10vw;
+      }
     
-      .landing-header-text {
-        font-size: 4em;
-      }
+        .landing-header-text {
+          font-size: 4em;
+        }
 
-      .landing-contacts-list {
-        display: flex;
-        justify-content: center;
-      }
+        .landing-contacts-list {
+          display: flex;
+          justify-content: center;
+        }
 
-      .landing-contacts-list-item {
-        display: flex;
-        flex-grow: 1;
-        justify-content: center;
-        margin-right: 0;
-      }
-      
-
+        .landing-contacts-list-item {
+          display: flex;
+          flex-grow: 1;
+          justify-content: center;
+          margin-right: 0;
+        }
   }

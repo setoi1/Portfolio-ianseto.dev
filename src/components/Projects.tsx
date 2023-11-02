@@ -1,23 +1,22 @@
-import { Grid } from '@material-ui/core';
-
+import Grid from '@mui/material/Grid';
 import ProjectCard from './ProjectCard';
-
-import './styles/Projects.css';
-
 import { motion } from 'framer-motion';
+import './styles/Projects.css';
 
 export default function Projects() {
   const projects = [
     {
       "id": 0,
+      "duration": .5,
       "image": "SwiftAPI.png",
       "title": "SwiftAPI",
       "techStack": ['TypeScript', 'JavaScript', 'React', 'Node.js', 'Express.js', 'MongoDB'],
-      "description": "A platform for developers to monetize their APIs and for users to purchase APIs in just a few clicks, as well as providing a proxy server for request validation between users and developers.",
-      "link": "https://github.com/andrewgalvin/SwiftAPI"
+      "description": "A platform for developers to monetize their APIs and for users to purchase APIs in just a few clicks. Provides analytics, monitoring, and loggin features.",
+      "link": "https://github.com/setoi1/SwiftAPI"
     },
     {
       "id": 1,
+      "duration": .75,
       "image": "FiMan.png",
       "title": "Finance Manager",
       "techStack": ['Python', 'tkinter', 'RESTful APIs'],
@@ -26,6 +25,7 @@ export default function Projects() {
     },
     {
       "id": 2,
+      "duration": 1,
       "image": "Stock.png",
       "title": "Stock Market Discord Bot",
       "techStack": [
@@ -36,6 +36,7 @@ export default function Projects() {
     },
     {
       "id": 3,
+      "duration": 1.25,
       "image": "NetTherapy.png",
       "title": "NetTherapy",
       "techStack": ['JavaScript', 'PostgreSQL', 'PHP'],
@@ -48,27 +49,29 @@ export default function Projects() {
     <>
       <section id="projects" className="projects-section">
         <h1 className="projects-header-text">Projects</h1>
-        <motion.div
-          initial={{ y: 50 , opacity: 0 }}
-          whileInView={{ y: 0 , opacity: 1 }}
-          viewport={{ once: true, amount: .25 }}
-          transition={{ duration: .5 }}
-        >
-          <Grid className="projects-container-items" container spacing={10} style={{ margin: 0, width: '100%' }}>
-          {projects.map((project) => (
-            <Grid key={project.title} item>
-              <ProjectCard 
-                image={project.image}
-                title={project.title} 
-                techStack={project.techStack}
-                description={project.description}
-                link={project.link}
-              />
+          <div className="projects-container">
+            <Grid className="projects-grid" container rowSpacing={8} style={{ margin: 0, width: '100%' }}>
+              {projects.map((project) => (
+                <Grid className="project-item" key={project.title} item xs={3}>
+                  <motion.div
+                    initial={{ y: 400, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: .25 }}
+                    transition={{ duration: project.duration }}
+                  >
+                    <ProjectCard 
+                      image={project.image}
+                      title={project.title} 
+                      techStack={project.techStack}
+                      description={project.description}
+                      link={project.link}
+                    />
+                  </motion.div>
+                </Grid>
+              ))}
             </Grid>
-          ))}
-          </Grid>
-        </motion.div>
+          </div>
       </section>
     </>
   );
-};
+}

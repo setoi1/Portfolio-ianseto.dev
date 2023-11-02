@@ -1,20 +1,23 @@
 .experience-section {
-  padding-top: 7.5vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  padding-top: 7.5vh;
+  padding-bottom: 7.5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
   .experience-header-text {
+    display: flex;
+    justify-content: center;
     font-size: 4em;
   }
 
   .experience-content {
-    display: flex;
-    flex-direction: row;
+
   }
 
     .experience-detail {
-      width: 50%;
+      margin-left: 15%;
+      margin-right: 15%;
     }
 
       .experience-list {
@@ -23,9 +26,19 @@
       }
 
         .experience-item {
-          /* background-color: rgb(18, 29, 63); */
-          /* border-radius: 2rem; */
+          border-radius: 1rem;
+          transition: background-color 0.5s ease;
         }
+
+        .experience-item:hover {
+          background-color: rgba(161, 161, 161, 0.651);
+          transition: background-color 0.5s ease;
+          cursor: pointer;
+        }
+
+          .experience-item-content {
+            padding: 1rem;
+          }
 
     .experience-timeline {
       display: flex;
@@ -43,8 +56,8 @@
 
 @media screen and (max-width: 480px) {
   .experience-section {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
   }
 
   .experience-header-text {
@@ -52,10 +65,6 @@
     align-items: center;
     justify-content: center;
     font-size: 3em;
-  }
-
-  .experience-detail {
-    width: 100%;
   }
 
   .experience-item {

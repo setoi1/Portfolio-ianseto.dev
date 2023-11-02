@@ -1,34 +1,30 @@
 import Navbar from './components/Navbar';
-import SideNavbar from './components/SideNavbar';
 import Landing from './components/Landing';
-import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import About from './components/About';
 import Contacts from './components/Contacts';
-import Footer from './components/Footer';
 
-import './App.css';
+import './styling/App.css';
 
-function App() {
+export default function App() {
   let mobile = false;
-
-  if (window.innerWidth < 480) {
+  if (window.innerWidth < 600) {
     mobile = true;
   }
 
   return (
-    <div className="App">
-      {!mobile &&
-        <>
+    <>
+      <div className='App'>
+        {!mobile &&
           <Navbar />
-        </>
-      }
-      <Landing />
-      <Experience />
-      <Projects />
-      <Contacts />
-    </div>
+        }
+        <Landing />
+        <Experience />
+        <Projects />
+        <About />
+        <Contacts />
+      </div>
+    </>
   );
 }
-
-export default App;

@@ -1,9 +1,7 @@
 import TechStackItem from './TechStackItem';
 
-export default function TechStackList(props: any) {
-
-  const techStack = props.techStack;
-
+export default function TechStackList(props: Array<string>) {
+  const techStack: Array<string> = props.techStack;
   return (
     <>
       <ul className="tech-stack-list">

@@ -1,6 +1,6 @@
 .projects-section {
-  padding-top: 7.5vw;
-  margin-bottom: 7.5vw;
+  padding-top: 7.5vh;
+  padding-bottom: 7.5vh;
 }
 
 .projects-header-text {
@@ -10,20 +10,18 @@
   font-size: 4em;
 }
 
-  .projects-container-items {
-    justify-content: center;
-  }
+.projects-container {
 
-    .project-grid-container {
-      justify-content: center;
-    }
+}
 
-      .project-row-container {
-        justify-content: center;
-      }
- 
-
+.project-item {
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (max-width: 480px) {
-  
+  .projects-grid  {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 }

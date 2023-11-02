@@ -1,6 +1,6 @@
 .footer-section {
-  height: 10%;
-  background-color: black;
+  height: 25vh;
+  background-color: White;
   display: flex;
   justify-content: center;
 }
