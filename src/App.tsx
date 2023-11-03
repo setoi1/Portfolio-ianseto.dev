@@ -23,7 +23,7 @@ export default function App() {
         <Experience />
         <Projects />
         <About />
-        <Contacts />
+        {/*<Contacts />*/}
       </div>
     </>
   );

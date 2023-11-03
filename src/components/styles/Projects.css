@@ -1,27 +1,24 @@
 .projects-section {
-  padding-top: 7.5vh;
-  padding-bottom: 7.5vh;
+  margin-top: 7.5vh;
+  margin-bottom: 7.5vh;
+  padding-top: 12.5rem;
 }
 
-.projects-header-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4em;
-}
-
-.projects-container {
-
-}
-
-.project-item {
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 480px) {
-  .projects-grid  {
-    margin-left: 5vw;
-    margin-right: 5vw;
+  .projects-section > h1 {
+    margin-left: 50%;
+    margin-right: 25%;
+    font-size: 4em;
   }
-}
+
+  .projects-content {
+    margin-left: 50%;
+    margin-right: 25%;
+  }
+
+  .projects-section > a {
+    margin-left: 50%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }

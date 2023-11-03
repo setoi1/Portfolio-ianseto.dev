@@ -5,51 +5,51 @@ import './styles/Navbar.css';
 export default function Navbar() {
   const navLinks = [
     {
-      "text": "Experience",
-      "section": "#experience"
+      'text': 'Experience',
+      'section': '#experience'
     },
     {
-      "text": "Projects",
-      "section": "#projects"
+      'text': 'Projects',
+      'section': '#projects'
     },
     {
-      "text": "About",
-      "section": "#about"
+      'text': 'About',
+      'section': '#about'
     },
     {
-      "text": "Contacts",
-      "section": "#contacts"
+      'text': 'Contacts',
+      'section': '#contacts'
     },
   ];
 
   return (
     <>
       <header>
-        <nav className="navbar">
-          <ul className="nav-list">
+        <nav className='navbar'>
+          <ul className='nav-list'>
             {navLinks.map((navlink) => (
-              <li className="nav-item">
-                <a className="nav-link" href={navlink.section}>
+              <li className='nav-item'>
+                <a className='nav-link' href={navlink.section}>
                   {navlink.text}
                 </a>
               </li>
             ))}
-            <li className="nav-item">
+            <li className='nav-item'>
               <a 
-                className="nav-link" 
-                href="https://www.linkedin.com/in/ianseto/" 
-                rel="noreferrer" 
-                target="_blank"
+                className='nav-link' 
+                href='https://www.linkedin.com/in/ianseto/' 
+                rel='noreferrer' 
+                target='_blank'
               >
                 <LinkedInIcon />
               </a>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <a 
-                className="nav-link" 
-                href="https://www.github.com/setoi1" 
-                rel="noreferrer" 
-                target="_blank"
+                className='nav-link' 
+                href='https://www.github.com/setoi1' 
+                rel='noreferrer' 
+                target='_blank'
               >
                 <GitHubIcon />
               </a>

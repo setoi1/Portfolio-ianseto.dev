@@ -1,16 +1,20 @@
 .about-section {
-  padding-top: 7.5vh;
-  padding-bottom: 7.5vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-top: 7.5vh;
+  margin-bottom: 25vh;
+  padding-top: 12.5rem;
 }
 
-  .about-header-text {
-    display: flex;
-    justify-content: center;
+  .about-section > h1 {
+    margin-left: 50%;
+    margin-right: 25%;
     font-size: 4em;
   }
 
-@media screen and (max-width: 480px) {
+  .about-content {
+    margin-left: 50%;
+    margin-right: 25%;
+  }
 
-}
+    .about-content > p {
+      font-size: 2em;
+    }

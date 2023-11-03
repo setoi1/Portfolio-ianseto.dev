@@ -1,51 +1,25 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  font-family: "Trebuchet MS", 'Futura';
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Futura';
   font-size: 100%;
   font-weight: 750;
   overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   background-color: rgb(12, 12, 12);
   color: rgb(219, 219, 219);
-  scroll-behavior: smooth;
-  cursor: url(FiMan.png), auto;
-
-  background: linear-gradient(328deg, #00ffbd, #ff0090, #ff8900);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 29s ease infinite;
-  animation: AnimationName 29s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 51%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 51%}
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.375s ease;
+  cursor: pointer;
 }
-@keyframes AnimationName {
-  0%{background-position:0% 51%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 51%}
-}
-
-section {
-  scroll-snap-align: center;
-  min-height: 36rem;
-}
-
-App {
-  height: 100vh;
-  width: 100vw;
-}
-
-
 
 /*-------------------------*/
 /* Media query styling  */
 /*-------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
 }

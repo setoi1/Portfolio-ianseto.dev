@@ -1,51 +1,30 @@
 .contacts-section {
-  padding-top: 7.5vh;
-  padding-bottom: 7.5vh;
+  height: 50vh;
+  margin-top: 7.5vh;
 }
 
-  .contacts-header-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .contacts-section > h1 {
+    margin-left: 50%;
+    margin-right: 25%;
     font-size: 4em;
   }
 
-  .contacts-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-right: 40px;
+  .contacts-content {
+    margin-left: 50%;
+    margin-right: 25%;
   }
 
-    .contacts-list-item {
+    .contacts-list {
       display: flex;
-      align-items: center;
-      text-decoration: none;
-      justify-content: center;
-      margin-left: 2rem;
-      margin-right: 2rem;
+      justify-content: space-between;
+      flex-direction: row;
+      padding-left: 0;
+      padding-right: 40%;
     }
 
-      .contacts-item-link {
+      .contacts-list-item {
         display: flex;
-        color: white;
+        align-items: center;
         text-decoration: none;
+        justify-content: center;
       }
-
-      .contacts-list-item:link {
-        text-decoration: none;
-      }
-
-      .contacts-list-item:visited {
-        text-decoration: none;
-      }
-
-      .github-icon {
-        padding-right: 2px;
-      }
-
-@media screen and (max-width: 480px) {
-  .contacts-section {
-    margin-bottom: 10vh;
-  }
-}
