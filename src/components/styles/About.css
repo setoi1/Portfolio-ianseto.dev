@@ -1,20 +1,18 @@
 .about-section {
-  margin-top: 7.5vh;
-  margin-bottom: 25vh;
-  padding-top: 12.5rem;
+  padding-top: 15rem;
 }
 
   .about-section > h1 {
     margin-left: 50%;
     margin-right: 25%;
-    font-size: 4em;
+    font-size: 3em;
   }
 
-  .about-content {
-    margin-left: 50%;
-    margin-right: 25%;
-  }
-
-    .about-content > p {
-      font-size: 2em;
+    .about-content {
+      margin-left: 50%;
+      margin-right: 25%;
     }
+
+      .about-content > p {
+        font-size: 2em;
+      }

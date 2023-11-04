@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import './styles/Experience.css';
+import { Typography } from '@mui/material';
 
 export default function Experience() {
   const jobs = [
@@ -25,32 +26,27 @@ export default function Experience() {
 
   return (
     <section id='experience' className='experience-section'>
-      <h1>Experience</h1>
+      <Typography variant='h1'>Experience</Typography>
       <div className='experience-content'>
         <div className='experience-detail'>
           <ul className='experience-list'>
             {jobs.map((job) => (
-              <motion.div
-                initial={{ y: 400, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: job.duration }}
-              > 
-                <li className='experience-item'>
-                  <a 
-                    href={job.link} 
-                    target='_blank' 
-                    rel='noopener noreferrer'
-                  >
-                    <div className='experience-item-content'>
+              <li className='experience-item'>
+                <a 
+                  href={job.link} 
+                  target='_blank' 
+                  rel='noopener noreferrer'
+                >
+                  <div className='experience-item-content'>
+                    <Typography>
                       <h2>{job.company}</h2>
                       <h3>{job.title}</h3>
                       <h4>{job.date}</h4>
                       <p>{job.description}</p>
-                    </div>
-                  </a>
-                </li>
-              </motion.div>
+                    </Typography>
+                  </div>
+                </a>
+              </li>
             ))}
           </ul>
         </div>

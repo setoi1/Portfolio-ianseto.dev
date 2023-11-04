@@ -1,24 +1,24 @@
 .projects-section {
-  margin-top: 7.5vh;
-  margin-bottom: 7.5vh;
   padding-top: 12.5rem;
 }
 
   .projects-section > h1 {
     margin-left: 50%;
     margin-right: 25%;
-    font-size: 4em;
+    font-size: 3em;
   }
 
-  .projects-content {
-    margin-left: 50%;
-    margin-right: 25%;
-  }
+    .projects-content {
+      margin-top: 5rem;
+      margin-left: 50%;
+      margin-right: 25%;
+    }
 
-  .projects-section > a {
-    margin-left: 50%;
-    margin-right: 25%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10rem;
-  }
+    .projects-section > a {
+      margin-left: 50%;
+      margin-right: 25%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }

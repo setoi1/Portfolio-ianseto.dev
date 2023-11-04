@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import ProjectCard from './ProjectCard';
 import './styles/Projects.css';
 import ArrowForward from '@mui/icons-material/ArrowForward';
+import { Typography } from '@mui/material';
 
 export default function Projects() {
   const projects = [
@@ -50,13 +51,13 @@ export default function Projects() {
   return (
     <>
       <section id='projects' className='projects-section'>
-        <h1>Projects</h1>
+        <Typography variant='h1'>Projects</Typography>
         <div className='projects-content'>
           <Grid className='projects-grid' container columns={3} spacing={8} justifyContent='center'>
             {projects.map((project) => (
               <Grid className='project-item' key={project.title} item>
                 <motion.div
-                  initial={{ y: 400, opacity: 0 }}
+                  initial={{ y: 200, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true, amount: .25 }}
                   transition={{ duration: project.duration }}

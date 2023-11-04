@@ -20,10 +20,9 @@ export default function App() {
           <Navbar />
         }
         <Landing />
+        <About />
         <Experience />
         <Projects />
-        <About />
-        {/*<Contacts />*/}
       </div>
     </>
   );

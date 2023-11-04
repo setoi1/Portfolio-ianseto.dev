@@ -15,7 +15,7 @@ export default function Landing() {
 
   return (
     <>
-      <section id='landing' className='landing-section'>
+      {/*<section id='landing' className='landing-section'>*/}
         <div className='landing-content'>
           <div className='landing-main'>
             <div className='slider-thumb'>
@@ -51,7 +51,9 @@ export default function Landing() {
             viewport={{ once: true }}
             transition={{ duration: 1.65 }}
           >
-            <p className='landing-introduction'>I'm passionate about developing and designing engaging, intricate, scalable, and robust software.</p>
+            <p className='landing-introduction'>
+              <Typography>I'm passionate about developing and designing engaging, intricate, scalable, and robust software.</Typography>
+            </p>
           </motion.div>
           {!mobile && 
             <motion.div
@@ -79,7 +81,7 @@ export default function Landing() {
             </div>
           </motion.div>
         </div>
-      </section>
+      {/*</section>*/}
     </>
   );
 }

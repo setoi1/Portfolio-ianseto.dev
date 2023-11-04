@@ -1,18 +1,19 @@
 .experience-section {
-  margin-top: 7.5vh;
-  margin-bottom: 7.5vh;
   padding-top: 15rem;
 }
 
   .experience-section > h1 {
     margin-left: 50%;
     margin-right: 25%;
-    font-size: 4em;
+    font-size: 3em;
   }
 
     .experience-content {
       margin-left: 50%;
       margin-right: 25%;
+      font-size: 3em;
+      padding-left: 1px;
+      padding-right: 1px;
     }
 
       .experience-list {
@@ -23,6 +24,7 @@
         .experience-item {
           border-radius: 1rem;
           transition: background-color 0.375s ease;
+          margin-bottom: 5rem;
         }
 
         .experience-item:hover {
@@ -30,5 +32,6 @@
         }
 
           .experience-item-content {
-            padding: 1rem;
+            padding-left: 1px;
+            padding-right: 1px;
           }
