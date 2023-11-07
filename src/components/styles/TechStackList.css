@@ -1,0 +1,21 @@
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  row-gap: .50rem;
+  column-gap: .50rem;
+}
+
+  .tech-stack-list > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(76, 124, 255, 0.815);
+    border-radius: 12px;
+    font-size: 1em;
+    padding: .50rem;
+    font-weight: 900;
+  }
