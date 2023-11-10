@@ -1,4 +1,4 @@
-# React Personal Portfolio
+# Personal Portfolio
 
 Built with React, JavaScript, HTML, and CSS
 
