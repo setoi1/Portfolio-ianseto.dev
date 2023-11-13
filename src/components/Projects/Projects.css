@@ -1,0 +1,40 @@
+.projects {
+  padding-top: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+  .projects-wrapper > a {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: white;
+  }
+
+  .projects-wrapper > a,
+  .projects-wrapper > a:link,
+  .projects-wrapper > a:visited
+  .projects-wrapper > a:hover
+  .projects-wrapper > a:active  {
+    text-decoration: none;
+  }
+
+  .projects-wrapper > h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+    .project-card-wrapper > a {
+      text-decoration: none;
+    }
+
+    .projects-content {
+      margin-top: 5vh;
+    }
+
+@media screen and (min-width: 1366px) {
+  .projects {
+    margin-right: 25%;
+  }
+}

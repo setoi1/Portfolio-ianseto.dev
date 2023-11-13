@@ -1,9 +1,8 @@
-import Navbar from './components/Navbar';
-import Landing from './components/Landing';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contacts from './components/Contacts';
+import Navbar from './components/Navbar/Navbar';
+import Landing from './components/Landing/Landing';
+import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
+import About from './components/About/About';
 
 import './styling/App.css';
 
@@ -19,10 +18,16 @@ export default function App() {
         {!mobile &&
           <Navbar />
         }
-        <Landing />
-        <About />
-        <Experience />
-        <Projects />
+        <div className='wrapper'>
+          <div className='left-column'>
+            <Landing />
+          </div>
+          <div className='right-column'>
+            <About />
+            <Experience />
+            <Projects />
+          </div>
+        </div>
       </div>
     </>
   );

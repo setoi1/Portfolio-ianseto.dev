@@ -1,0 +1,47 @@
+.experience {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10vh;
+}
+
+  .experience-wrapper {
+
+  }
+
+    .experience-content {
+      margin-top: 5vh;
+      font-size: 3em;
+    }
+
+      .experience-list {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+        .experience-item {
+          margin-bottom: 5rem;
+        }
+
+          .experience-item > a {
+            color: rgb(219, 219, 219);
+            text-decoration: none;
+          }
+
+@media screen and (min-width: 1366px) {
+  .experience {
+    margin-right: 25%;
+  }
+  
+          .experience-item {
+            border-radius: 1rem;
+            transition: background-color 0.375s ease;
+          }
+  
+            .experience-item > a {
+              color: rgb(219, 219, 219);
+              transition: background-color 0.375s ease;
+              cursor: pointer;
+            }
+}

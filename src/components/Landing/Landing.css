@@ -1,0 +1,130 @@
+.landing {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+  .landing-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+    .landing-headers {
+
+    }
+
+      .landing-header {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+        font-size: 3em;
+      }
+
+      .landing-headline {
+        margin-top: 0;
+        color: white;
+        font-size: 2em;
+      }
+
+      .landing-introduction {
+        font-size: 1em;
+      }
+    
+      .landing-contacts-list {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    
+        .landing-contacts-list-item {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          justify-content: center;
+          margin-right: 2rem;
+        }
+    
+          .landing-contacts-item-link {
+            color: white;
+          }
+          
+@media screen and (min-width: 1366px) {
+  .landing {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    .landing-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .landing-headers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+    }
+
+      .landing-header {
+        margin: 0;
+        font-size: 4em;
+      }
+      
+      .landing-headline {
+        margin: 0;
+        font-size: 3em;
+      }
+
+    .landing-introduction {
+      margin-top: 15vh;
+      margin-right: 25%;
+    }
+
+    .landing-contacts-list {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+      .landing-contacts-list-item {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        justify-content: center;
+        margin-right: 2rem;
+      }
+
+        .landing-contacts-item-link {
+          display: flex;
+          color: white;
+        }
+
+        img {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+        }
+}
+
+@media screen and (min-width: 768px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+}
