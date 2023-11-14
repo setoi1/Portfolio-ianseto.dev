@@ -53,8 +53,8 @@
           
 @media screen and (min-width: 1366px) {
   .landing {
-    width: 50%;
-    margin-left: 0;
+    width: 66%;
+    margin-left: 25%  ;
     margin-right: 0;
   }
 
@@ -112,15 +112,16 @@
           position: fixed;
           bottom: 0;
           right: 0;
+          max-width: 200px;
+          height: auto;
         }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
   .landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 5rem;
   }
 
   img {
