@@ -23,5 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 build
+<<<<<<< HEAD
 .firebaserc
 .firebase
+=======
+
+install-state.gz
+>>>>>>> 3e8ac63c377515bc89dbfed58d8eee889a2b1156
