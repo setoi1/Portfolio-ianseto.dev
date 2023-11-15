@@ -8,48 +8,44 @@
     flex-direction: column;
     justify-content: center;
   }
-  
-    .landing-headers {
 
+    .landing-header {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+      font-size: 3em;
     }
 
-      .landing-header {
-        margin-top: 0;
-        margin-bottom: 0;
-        color: white;
-        font-size: 3em;
-      }
+    .landing-headline {
+      margin-top: 0;
+      color: white;
+      font-size: 2em;
+    }
 
-      .landing-headline {
-        margin-top: 0;
-        color: white;
-        font-size: 2em;
-      }
-
-      .landing-introduction {
-        font-size: 1em;
-      }
-    
-      .landing-contacts-list {
+    .landing-introduction {
+      font-size: 1em;
+    }
+  
+    .landing-contacts-list {
+      display: flex;
+      flex-direction: row;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-left: 0;
+      padding-left: 0;
+    }
+  
+      .landing-contacts-list-item {
         display: flex;
-        flex-direction: row;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        margin-left: 0;
-        padding-left: 0;
+        align-items: center;
+        text-decoration: none;
+        justify-content: center;
+        margin-right: 2rem;
       }
-    
-        .landing-contacts-list-item {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          justify-content: center;
-          margin-right: 2rem;
+  
+        .landing-contacts-item-link {
+          color: white;
         }
-    
-          .landing-contacts-item-link {
-            color: white;
-          }
           
 @media screen and (min-width: 1366px) {
   .landing {

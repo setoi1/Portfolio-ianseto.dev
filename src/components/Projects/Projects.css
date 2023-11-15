@@ -9,19 +9,16 @@
     font-size: 4em;
   }
 
-  .projects-wrapper > a {
+  .projects-wrapper > a,
+  .projects-wrapper > a:link,
+  .projects-wrapper > a:visited
+  .projects-wrapper > a:hover
+  .projects-wrapper > a:active {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
     color: white;
-  }
-
-  .projects-wrapper > a,
-  .projects-wrapper > a:link,
-  .projects-wrapper > a:visited
-  .projects-wrapper > a:hover
-  .projects-wrapper > a:active  {
     text-decoration: none;
   }
 
