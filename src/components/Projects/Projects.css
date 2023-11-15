@@ -4,6 +4,11 @@
   margin-right: 10%;
 }
 
+  .projects-wrapper > h2 {
+    font-family: 'Times New Roman';
+    font-size: 4em;
+  }
+
   .projects-wrapper > a {
     display: flex;
     justify-content: center;
@@ -35,6 +40,6 @@
 
 @media screen and (min-width: 1366px) {
   .projects {
-    margin-right: 25%;
+    margin-right: 50%;
   }
 }
