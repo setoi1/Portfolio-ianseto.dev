@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Grid from '@mui/material/Grid';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import ArrowForward from '@mui/icons-material/ArrowForward';
+import NewProjectCard from '../NewProjectCard/NewProjectCard';
 import { Typography } from '@mui/material';
 import './Projects.css';
 
@@ -142,7 +142,8 @@ export default function Projects() {
             ))}
           </Grid>
         </div>
-        <a href='https://github.com/setoi1/'>View All Projects<ArrowForward /></a>
+        <a href='https://github.com/setoi1/'>View All Projects</a>
+        <NewProjectCard />
       </div>
     </section>
   );
