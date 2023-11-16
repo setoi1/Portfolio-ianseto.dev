@@ -22,36 +22,38 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className='navbar'>
-      <ul className='nav-list'>
-        {navLinks.map((navLink) => (
-          <li key={navLink.id} className='nav-item'>
-            <a className='nav-link' href={navLink.section}>
-              {navLink.text}
+    <header>
+      <nav className='navbar'>
+        <ul className='nav-list'>
+          {navLinks.map((navLink) => (
+            <li key={navLink.id} className='nav-item'>
+              <a className='nav-link' href={navLink.section}>
+                {navLink.text}
+              </a>
+            </li>
+          ))}
+          <li className='nav-item'>
+            <a 
+              className='nav-link' 
+              href='https://www.linkedin.com/in/ianseto/' 
+              rel='noreferrer' 
+              target='_blank'
+            >
+              <LinkedInIcon />
             </a>
           </li>
-        ))}
-        <li className='nav-item'>
-          <a 
-            className='nav-link' 
-            href='https://www.linkedin.com/in/ianseto/' 
-            rel='noreferrer' 
-            target='_blank'
-          >
-            <LinkedInIcon />
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a 
-            className='nav-link' 
-            href='https://www.github.com/setoi1' 
-            rel='noreferrer' 
-            target='_blank'
-          >
-            <GitHubIcon />
-          </a>
-        </li>
-      </ul>
-    </nav>
+          <li className='nav-item'>
+            <a 
+              className='nav-link' 
+              href='https://www.github.com/setoi1' 
+              rel='noreferrer' 
+              target='_blank'
+            >
+              <GitHubIcon />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }

@@ -23,16 +23,18 @@ export default function ProjectCard(props: ProjectData) {
         target='_blank' 
         rel='noopener noreferrer'
       >
-        <Card sx={{ minWidth: 240, minHeight: 240, maxWidth: 480, maxHeight: 480 }} style={{ backgroundColor: 'rgb(18, 29, 63)', borderRadius: 20, height: 480, width: 240 }}>
+        <Card sx={{  minWidth: 360, minHeight: 360, maxWidth: 360, maxHeight: 360 }} style={{ backgroundColor: '#D2CCCB', borderRadius: 20 }}>
+          {/*}
           <CardMedia
-            style={{height: 140}}
+            style={{height: '50%'}}
             image={props.image}
           />
-          <CardContent style={{color: 'white'}}>
-            <Typography gutterBottom variant='h5' component='div' style={{color: 'white'}}>
+        */}
+          <CardContent style={{color: 'black'}}>
+            <Typography gutterBottom variant='h4' component='div' style={{color: 'black'}}>
               {props.title}
             </Typography>
-            <Typography variant='body2' style={{color: 'white'}}>
+            <Typography variant='body1' style={{color: 'black'}}>
               {props.description}
             </Typography>
             <ul className='tech-stack-list'>

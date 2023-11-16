@@ -1,7 +1,7 @@
 .projects {
-  padding-top: 10vh;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 10%;
 }
 
   .projects-wrapper > h2 {
@@ -37,6 +37,7 @@
 
 @media screen and (min-width: 1366px) {
   .projects {
+    margin-left: 5%;
     margin-right: 50%;
   }
 }

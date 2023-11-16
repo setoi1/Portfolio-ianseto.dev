@@ -1,7 +1,7 @@
 .experience {
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 10vh;
+  padding-top: 10%;
 }
 
   .experience-wrapper > h2 {
@@ -32,6 +32,7 @@
 
 @media screen and (min-width: 1366px) {
   .experience {
+    margin-left: 5%;
     margin-right: 50%;
   }
   

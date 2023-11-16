@@ -7,28 +7,25 @@ import About from './components/About/About';
 import './styling/App.css';
 
 export default function App() {
-  let mobile = false;
+  let isMobile = true;
   if (window.innerWidth < 600) {
-    mobile = true;
+    isMobile = false;
   }
-
   return (
-    <>
-      <div className='App'>
-        {!mobile &&
-          <Navbar />
-        }
-        <div className='wrapper'>
-          <div className='left-column'>
-            <Landing />
-          </div>
-          <div className='right-column'>
-            <About />
-            <Experience />
-            <Projects />
-          </div>
+    <div className='App'>
+      {isMobile &&
+        <Navbar />
+      }
+      <div className='wrapper'>
+        <div className='left-column'>
+          <Landing />
+        </div>
+        <div className='right-column'>
+          <About />
+          <Experience />
+          <Projects />
         </div>
       </div>
-    </>
+    </div>
   );
 }
