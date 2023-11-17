@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import App from './App';
-import Error from './components/Error/Error';
 import './styling/index.css';
 
 const firebaseConfig = {
@@ -23,7 +22,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <Error />
   },
 ]);
 
