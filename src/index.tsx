@@ -1,17 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { initializeApp } from 'firebase/app';
 import App from './App';
+import Error from './components/Error/Error';
 import './styling/index.css';
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-// import { getAnalytics } from 'firebase/analytics';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: 'AIzaSyDbu1fqvUoyrX91lEZkHOwErklYMYmhr54',
   authDomain: 'ian-seto-portfolio.firebaseapp.com',
@@ -22,13 +16,14 @@ const firebaseConfig = {
   measurementId: 'G-1S1RT678BC'
 };
 
-// Initialize Firebase
+// Initialize Firebase and use as necessary
 const app = initializeApp(firebaseConfig);
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <Error />
   },
 ]);
 
