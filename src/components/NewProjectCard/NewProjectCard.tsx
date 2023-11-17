@@ -1,12 +1,19 @@
-
+import { motion } from 'framer-motion';
 import './NewProjectCard.css';
 
-export default function NewProjectCard(props: any) {
+export default function NewProjectCard() {
   return (
-    <div className='card-wrapper'>
+    <motion.div
+      className='card-wrapper'
+    >
       <a href='https://google.com'>
-        Hello
+        <h1>
+          Hello
+        </h1>
+        <p>
+          Description
+        </p>
       </a>
-    </div>
+    </motion.div>
   );
 }

@@ -18,23 +18,23 @@ export default function Landing() {
         {mobile && <img src='Ian_Seto.png' width='100%' height='100%' />}
           <div className='landing-headers'>
             <motion.div
-              initial={{ y: 37.5 , opacity: 0 }}
+              initial={{ y: 25 , opacity: 0 }}
               whileInView={{ y: 0 , opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: .66 }}
+              transition={{ duration: .75 }}
             >
               <h1 className='landing-header'>Hi,</h1>
             </motion.div>
             <motion.div
-              initial={{ y: 37.5 , opacity: 0 }}
+              initial={{ y: 25 , opacity: 0 }}
               whileInView={{ y: 0 , opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: .99 }}
+              transition={{ duration: 1 }}
             >
               <h1 className='landing-header'>I'm Ian Seto.</h1>
             </motion.div>
             <motion.div
-              initial={{ y: 37.5 , opacity: 0 }}
+              initial={{ y: 25 , opacity: 0 }}
               whileInView={{ y: 0 , opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.32 }}
@@ -43,7 +43,7 @@ export default function Landing() {
             </motion.div>
           </div>
           <motion.div
-            initial={{ y: 37.5 , opacity: 0 }}
+            initial={{ y: 25 , opacity: 0 }}
             whileInView={{ y: 0 , opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.65 }}
@@ -54,7 +54,7 @@ export default function Landing() {
           </motion.div>
 
           <motion.div
-            initial={{ y: 37.5 , opacity: 0 }}
+            initial={{ y: 25 , opacity: 0 }}
             whileInView={{ y: 0 , opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.98 }}

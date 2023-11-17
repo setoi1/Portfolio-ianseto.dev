@@ -6,7 +6,7 @@ export default function Experience() {
   const jobs = [
     {
       id: 0,
-      duration: .5,
+      duration: 1,
       link: 'https://www.intralinks.com/',
       company: 'SS&C Intralinks',
       title: 'Software Engineer Intern',
@@ -15,7 +15,7 @@ export default function Experience() {
     },
     {
       id: 1,
-      duration: .75,
+      duration: 2,
       link: 'https://wit.edu/',
       company: 'Wentworth Institute of Technology',
       title: 'Research Developer',
