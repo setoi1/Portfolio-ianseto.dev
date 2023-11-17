@@ -4,8 +4,13 @@
   padding-top: 10%;
 }
 
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
   .projects-wrapper > h2 {
-    font-family: 'Times New Roman';
+    font-family: 'Cairo';
     font-size: 4em;
   }
 
@@ -22,18 +27,31 @@
     text-decoration: none;
   }
 
-  .projects-wrapper > h2 {
-    display: flex;
-    justify-content: center;
-  }
-
-    .project-card-wrapper > a {
-      text-decoration: none;
-    }
-
     .projects-content {
       margin-top: 5vh;
     }
+
+      .projects-list {
+        padding: 0;
+        list-style: none;
+      }
+
+      .project-item {
+        border-top: 1.5px #D2CCCB solid;
+      }
+
+      .project-item > a,
+      .project-item > a:link,
+      .project-item > a:visited
+      .project-item > a:hover
+      .project-item > a:active {
+        color: white;
+        text-decoration: none;
+      }
+
+      .project-card-wrapper > a {
+        text-decoration: none;
+      }
 
 @media screen and (min-width: 1366px) {
   .projects {

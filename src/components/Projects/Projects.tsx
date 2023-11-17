@@ -80,6 +80,16 @@
         <div className='projects-wrapper'>
           <Typography variant='h2'>Projects</Typography>
           <div className='projects-content'>
+            <ul className='projects-list'>
+              {projects.map(project => 
+                <li key={project.id} className='project-item'>
+                  <a href={project.link}>
+                    {project.name}
+                  </a>
+                </li>
+              )}
+            </ul>
+            {/*}
             <Grid className='projects-grid' container columns={12} spacing={8} justifyContent='center'>
               {projects.map(project => (
                 <Grid key={project.name} className='project-item' item>
@@ -101,6 +111,7 @@
                 </Grid>
               ))}
             </Grid>
+            */}
           </div>
           <a href='https://github.com/setoi1/'>View All Projects</a>
         </div>

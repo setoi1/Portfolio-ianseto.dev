@@ -1,19 +1,6 @@
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { ProjectData } from '../../types/Types';
 import './ProjectCard.css';
-
-interface ProjectData {
-  id: number,
-  image: string;
-  title: string;
-  techStack: Array<TechStack>;
-  description: string;
-  link: string;
-}
-
-interface TechStack {
-  id: number,
-  tech: string
-}
 
 export default function ProjectCard(props: ProjectData) {
   return (
@@ -30,18 +17,20 @@ export default function ProjectCard(props: ProjectData) {
             image={props.image}
           />
         */}
-          <CardContent style={{color: 'black'}}>
-            <Typography gutterBottom variant='h4' component='div' style={{color: 'black'}}>
-              {props.title}
+          <CardContent style={{color: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <Typography variant='h3' style={{color: 'black', float: 'right', fontWeight: 500}}>
+              {props.name}
             </Typography>
+            {/*}
             <Typography variant='body1' style={{color: 'black'}}>
               {props.description}
             </Typography>
+            */}
             <ul className='tech-stack-list'>
-              {props.techStack.map(tech => 
-                <li key={tech.id}>
+              {props.techStack.map(technology => 
+                <li key={technology.id}>
                   <Typography>
-                    {tech.tech}
+                    {technology.name}
                   </Typography>
                 </li>
               )}
