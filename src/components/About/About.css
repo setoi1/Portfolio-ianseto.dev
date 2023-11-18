@@ -6,7 +6,7 @@
 
   .about-wrapper > h2 {
     font-family: 'Cairo';
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .about-summary {
@@ -23,11 +23,16 @@
     margin-left: 5%;
     margin-right: 50%;
     padding-top: 10%;
-  }
+  } 
 
-    .about-summary {
-      margin-top: 5vh;
+    .about-wrapper > hr {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
     }
+
+      .about-summary {
+        margin-top: 0;
+      }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {

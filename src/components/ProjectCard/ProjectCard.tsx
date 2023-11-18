@@ -18,9 +18,7 @@ export default function ProjectCard(props: ProjectData) {
           />
         */}
           <CardContent style={{color: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-            <Typography variant='h3' style={{color: 'black', float: 'right', fontWeight: 500}}>
-              {props.name}
-            </Typography>
+            <Typography variant='h3' style={{color: 'black', float: 'right', fontWeight: 500}}>{props.name}</Typography>
             {/*}
             <Typography variant='body1' style={{color: 'black'}}>
               {props.description}
@@ -29,9 +27,7 @@ export default function ProjectCard(props: ProjectData) {
             <ul className='tech-stack-list'>
               {props.techStack.map(technology => 
                 <li key={technology.id}>
-                  <Typography>
-                    {technology.name}
-                  </Typography>
+                  <Typography>{technology.name}</Typography>
                 </li>
               )}
             </ul>

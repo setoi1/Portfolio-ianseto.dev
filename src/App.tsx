@@ -11,6 +11,7 @@ export default function App() {
   if (window.innerWidth < 600) {
     isMobile = false;
   }
+  
   return (
     <div className='App'>
       {isMobile &&

@@ -1,7 +1,5 @@
   import { motion } from 'framer-motion';
-  import { Typography, Grid } from '@mui/material';
-  import ProjectCard from '../ProjectCard/ProjectCard';
-  import NewProjectCard from '../NewProjectCard/NewProjectCard';
+  import { Typography } from '@mui/material';
   import './Projects.css';
 
   export default function Projects() {
@@ -55,6 +53,31 @@
       {
         id: 2,
         image: 'Stock.png',
+        name: 'Million Ether Page',
+        description: '',
+        techStack: [
+          {
+            id: 0,
+            name: 'Solidity',
+          },
+          {
+            id: 1,
+            name: 'Etherium',
+          },
+          {
+            id: 2,
+            name: 'HTML',
+          },
+          {
+            id: 3,
+            name: 'CSS',
+          },
+        ],
+        link: 'https://github.com/faceyacc/million_eth_homepage'
+      },
+      {
+        id: 3,
+        image: 'Stock.png',
         name: 'Stock Market Discord Bot',
         description: 'A discord bot to display user-requested stock information such as news, prices, and company information.',
         techStack: [
@@ -82,11 +105,12 @@
           <div className='projects-content'>
             <ul className='projects-list'>
               {projects.map(project => 
-                <li key={project.id} className='project-item'>
+                <>
+                  <hr></hr>
                   <a href={project.link}>
-                    {project.name}
+                    <li key={project.id} className='project-item'>{project.name}</li>
                   </a>
-                </li>
+                </>
               )}
             </ul>
             {/*}

@@ -6,7 +6,7 @@
 
   .experience-wrapper > h2 {
     font-family: 'Cairo';
-    font-size: 4em;
+    font-size: 3em;
   }
 
     .experience-content {
@@ -35,6 +35,17 @@
     margin-left: 5%;
     margin-right: 50%;
   }
+
+    .experience-wrapper > hr {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .experience-content {
+      margin-top: 0;
+      font-size: 3em;
+    }
+
   
     .experience-item {
       border-radius: 1rem;

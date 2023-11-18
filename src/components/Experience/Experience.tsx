@@ -6,7 +6,6 @@ export default function Experience() {
   const jobs = [
     {
       id: 0,
-      duration: 1,
       link: 'https://www.intralinks.com/',
       company: 'SS&C Intralinks',
       title: 'Software Engineer Intern',
@@ -15,7 +14,6 @@ export default function Experience() {
     },
     {
       id: 1,
-      duration: 2,
       link: 'https://wit.edu/',
       company: 'Wentworth Institute of Technology',
       title: 'Research Developer',
@@ -28,6 +26,7 @@ export default function Experience() {
     <section id='experience' className='experience'>
       <div className='experience-wrapper'>
         <Typography variant='h2'>Experience</Typography>
+        <hr></hr>
         <div className='experience-content'>
           <ul className='experience-list'>
             {jobs.map((job) => (

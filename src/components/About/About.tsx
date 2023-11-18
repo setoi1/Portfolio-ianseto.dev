@@ -6,6 +6,7 @@ export default function About() {
     <section id='about' className='about'>
       <div className='about-wrapper'>
         <Typography variant='h2'>About Me</Typography>
+        <hr></hr>
         <div className='about-summary'>
           <Typography variant='body2'>Graduated with a Bachelor of Science in Computer Science from Wentworth Institute of Technology, with a passion for developing innovative software that creates a real-world impact in any industry.</Typography> 
           <br></br>
