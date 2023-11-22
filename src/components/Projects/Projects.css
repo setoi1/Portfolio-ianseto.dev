@@ -66,13 +66,19 @@
     }
 
       .project-item {
-        border-radius: 2.5rem;
-        font-size: 2em;
+        border-radius: 2rem;
+        font-size: 1.5em;
         transition: .25s;
       }
 
       .project-item:hover {
         background-color: rgba(85, 253, 183, 0.445);
         transition: .25s;
+      }
+
+      .text-here {
+        padding: .5rem 1rem .5rem .5rem;
+        display: flex;
+        justify-content: right;
       }
 }

@@ -78,8 +78,8 @@
       {
         id: 3,
         image: 'Stock.png',
-        name: 'Stock Market Discord Bot',
-        description: 'A discord bot to display user-requested stock information such as news, prices, and company information.',
+        name: 'Stock Market Bot',
+        description: 'A bot to display user-requested stock information such as news, prices, and company information.',
         techStack: [
           {
             id: 0,
@@ -108,7 +108,11 @@
                 <>
                   <hr></hr>
                   <a href={project.link}>
-                    <li key={project.id} className='project-item'>{project.name}</li>
+                    <li key={project.id} className='project-item'>
+                      <div className='text-here'>
+                        {project.name}
+                      </div>
+                    </li>
                   </a>
                 </>
               )}
