@@ -1,149 +1,125 @@
-import { motion } from 'framer-motion';
-import Grid from '@mui/material/Grid';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import ArrowForward from '@mui/icons-material/ArrowForward';
-import { Typography } from '@mui/material';
-import './Projects.css';
+  import { motion } from 'framer-motion';
+  import { Typography } from '@mui/material';
+  import './Projects.css';
 
-type TechStack = {
-  id: number,
-  tech: string
-}
+  export default function Projects() {
+    const projects = [
+      {
+        id: 0,
+        image: 'SwiftAPI.png',
+        name: 'SwiftAPI',
+        description: 'A platform for developers to monetize their APIs and for users to purchase APIs in just a few clicks. Provides analytics, monitoring, and loggin features.',
+        techStack: [
+          {
+            id: 0,
+            name: 'React'
+          },
+          {
+            id: 1,
+            name: 'TypeScript'
+          },
+          {
+            id: 2,
+            name: 'Node.js'
+          },
+          {
+            id: 3,
+            name: 'MongoDB'
+          }
+        ],
+        link: 'https://github.com/setoi1/SwiftAPI'
+      },
+      {
+        id: 1,
+        image: 'FiMan.png',
+        name: 'Finance Manager',
+        description: 'A finance manager application built with Python.',
+        techStack: [
+          {
+            id: 0,
+            name: 'Python'
+          }, 
+          {
+            id: 1, 
+            name: 'tkinter',
+          }, 
+          {
+            id: 2,
+            name: 'RESTful APIs'
+          }
+        ],
+        link: 'https://github.com/marinom1/FiMan-Financial_Manager'
+      },
+      {
+        id: 2,
+        image: 'Stock.png',
+        name: 'Million Ether Page',
+        description: '',
+        techStack: [
+          {
+            id: 0,
+            name: 'Solidity',
+          },
+          {
+            id: 1,
+            name: 'Etherium',
+          },
+          {
+            id: 2,
+            name: 'HTML',
+          },
+          {
+            id: 3,
+            name: 'CSS',
+          },
+        ],
+        link: 'https://github.com/faceyacc/million_eth_homepage'
+      },
+      {
+        id: 3,
+        image: 'Stock.png',
+        name: 'Stock Market Bot',
+        description: 'A bot to display user-requested stock information such as news, prices, and company information.',
+        techStack: [
+          {
+            id: 0,
+            name: 'JavaScript'
+          },
+          {
+            id: 1,
+            name: 'Node.js'
+          },
+          {
+            id: 2,
+            name: 'RESTful APIs'
+          }
+        ],
+        link: 'https://github.com/setoi1/Stock-Market-Discord-Bot'
+      },
+    ];
 
-interface Projects {
-  id: number,
-  image: string,
-  title: string,
-  description: string,
-  techStack: Array<TechStack>,
-  link: string,
-}
-
-export default function Projects() {
-  const projects = [
-    {
-      id: 0,
-      duration: .5,
-      image: 'SwiftAPI.png',
-      title: 'SwiftAPI',
-      description: 'A platform for developers to monetize their APIs and for users to purchase APIs in just a few clicks. Provides analytics, monitoring, and loggin features.',
-      techStack: [
-        {
-          id: 0,
-          tech: 'React'
-        },
-        {
-          id: 1,
-          tech: 'TypeScript'
-        },
-        {
-          id: 2,
-          tech: 'Node.js'
-        },
-        {
-          id: 3,
-          tech: 'MongoDB'
-        }
-      ],
-      link: 'https://github.com/setoi1/SwiftAPI'
-    },
-    {
-      id: 1,
-      duration: .75,
-      image: 'FiMan.png',
-      title: 'Finance Manager',
-      description: 'A finance manager application built with Python.',
-      techStack: [
-        {
-          id: 0,
-          tech: 'Python'
-        }, 
-        {
-          id: 1, 
-          tech: 'tkinter',
-        }, 
-        {
-          id: 2,
-          tech: 'RESTful APIs'
-        }
-      ],
-      link: 'https://github.com/marinom1/FiMan-Financial_Manager'
-    },
-    {
-      id: 2,
-      duration: 1,
-      image: 'Stock.png',
-      title: 'Stock Market Discord Bot',
-      description: 'A discord bot to display user-requested stock information such as news, prices, and company information.',
-      techStack: [
-        {
-          id: 0,
-          tech: 'JavaScript'
-        },
-        {
-          id: 1,
-          tech: 'Node.js'
-        },
-        {
-          id: 2,
-          tech: 'RESTful APIs'
-        }
-      ],
-      link: 'https://github.com/setoi1/Stock-Market-Discord-Bot'
-    },
-    {
-      id: 3,
-      duration: 1.25,
-      image: 'NetTherapy.png',
-      title: 'NetTherapy',
-      description: 'A website targeted towards users who feel anxious or hesistant to seek help regarding their mental well-being from certified therapists.',
-      techStack: [
-        {
-          id: 0,
-          tech: 'JavaScript'
-        },
-        {
-          id: 1,
-          tech: 'PHP'
-        },
-        {
-          id: 2,
-          tech: 'PostgreSQL'
-        }
-      ],
-      link: 'https://github.com/setoi1/Online-Therapy-Forum'
-    },
-  ];
-
-  return (
-    <section id='projects' className='projects'>
-      <div className='projects-wrapper'>
-        <Typography variant='h2'>Projects</Typography>
-        <div className='projects-content'>
-          <Grid className='projects-grid' container columns={12} spacing={8} justifyContent='center'>
-            {projects.map((project) => (
-              <Grid key={project.title} className='project-item' item>
-                <motion.div
-                  initial={{ y: 25, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: true, amount: 0.1 }}
-                  transition={{ duration: project.duration }}
-                > 
-                  <ProjectCard
-                    id={project.id}
-                    image={project.image}
-                    title={project.title} 
-                    techStack={project.techStack}
-                    description={project.description}
-                    link={project.link}
-                  />
-                </motion.div>
-              </Grid>
-            ))}
-          </Grid>
+    return (
+      <section id='projects' className='projects'>
+        <div className='projects-wrapper'>
+          <Typography variant='h2'>Projects</Typography>
+          <div className='projects-content'>
+            <ul className='projects-list'>
+              {projects.map(project => 
+                <>
+                  <hr></hr>
+                  <a href={project.link}>
+                    <li key={project.id} className='project-item'>
+                      <div className='text-here'>
+                        {project.name}
+                      </div>
+                    </li>
+                  </a>
+                </>
+              )}
+            </ul>
+          </div>
+          <a href='https://github.com/setoi1/'>View All Projects</a>
         </div>
-        <a href='https://github.com/setoi1/'>View All Projects<ArrowForward /></a>
-      </div>
-    </section>
-  );
-}
+      </section>
+    );
+  }

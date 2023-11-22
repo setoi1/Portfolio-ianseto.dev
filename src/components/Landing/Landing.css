@@ -44,14 +44,14 @@
       }
   
         .landing-contacts-item-link {
-          color: white;
+          color: rgb(219, 219, 219);
         }
           
 @media screen and (min-width: 1366px) {
   .landing {
-    width: 66%;
-    margin-left: 50%;
-    margin-right: 10%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 0;
   }
 
     .landing-wrapper {
@@ -69,7 +69,7 @@
 
       .landing-header {
         margin: 0;
-        font-size: 4em;
+        font-size: 5em;
       }
       
       .landing-headline {
