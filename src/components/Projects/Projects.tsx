@@ -117,29 +117,6 @@
                 </>
               )}
             </ul>
-            {/*}
-            <Grid className='projects-grid' container columns={12} spacing={8} justifyContent='center'>
-              {projects.map(project => (
-                <Grid key={project.name} className='project-item' item>
-                  <motion.div
-                    initial={{ y: 25, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true, amount: 0.1 }}
-                    transition={{ duration: 1 }}
-                  > 
-                    <ProjectCard
-                      id={project.id}
-                      image={project.image}
-                      name={project.name} 
-                      techStack={project.techStack}
-                      description={project.description}
-                      link={project.link}
-                    />
-                  </motion.div>
-                </Grid>
-              ))}
-            </Grid>
-            */}
           </div>
           <a href='https://github.com/setoi1/'>View All Projects</a>
         </div>
