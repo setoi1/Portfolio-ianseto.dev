@@ -10,7 +10,6 @@
 }
 
   .projects-wrapper > h2 {
-    font-family: 'Cairo';
     font-size: 3em;
   }
 
@@ -54,6 +53,10 @@
       .project-card-wrapper > a {
         text-decoration: none;
       }
+
+.text-here {
+  
+}
 
 @media screen and (min-width: 1366px) {
   .projects {

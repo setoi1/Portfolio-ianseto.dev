@@ -1,26 +1,30 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import './Navbar.css';
 
-export default function Navbar() {
-  const navLinks = [
-    {
-      id: 0,
-      text: 'About',
-      section: '#about'
-    },
-    {
-      id: 1,
-      text: 'Experience',
-      section: '#experience'
-    },
-    {
-      id: 2,
-      text: 'Projects',
-      section: '#projects'
-    },
-  ];
+const navLinks = [
+  {
+    id: -1,
+    text: 'Home',
+    section: '#about',
+  },
+  {
+    id: 0,
+    text: 'About',
+    section: '#about',
+  },
+  {
+    id: 1,
+    text: 'Experience',
+    section: '#experience',
+  },
+  {
+    id: 2,
+    text: 'Projects',
+    section: '#projects',
+  },
+];
 
+export default function Navbar() {
   return (
     <header>
       <nav className='navbar'>
@@ -39,7 +43,7 @@ export default function Navbar() {
               rel='noreferrer' 
               target='_blank'
             >
-              <LinkedInIcon />
+              <FaLinkedin />
             </a>
           </li>
           <li className='nav-item'>
@@ -49,7 +53,7 @@ export default function Navbar() {
               rel='noreferrer' 
               target='_blank'
             >
-              <GitHubIcon />
+              <FaGithub />
             </a>
           </li>
         </ul>

@@ -101,6 +101,7 @@
         .landing-contacts-item-link {
           display: flex;
           color: white;
+          font-size: 2em;
         }
 
         img {
