@@ -9,7 +9,7 @@ const jobs = [
     title: 'Software Engineer Intern',
     date: 'Jun 2021 - Dec 2021',
     description: `Developed investment management and fund reporting solutions used by over 515,000 individuals from 100,000 organizations. 
-    Implemented various frontend and backend features, most notably a critical faul-tolerance and recovery system.`,
+    Implemented various frontend and backend features, most notably a critical backend fault-tolerance and recovery system.`,
   },
   {
     id: 1,
@@ -17,8 +17,8 @@ const jobs = [
     company: 'Wentworth Institute of Technology',
     title: 'Research Developer',
     date: 'Sep 2022 - Dec 2022',
-    description: `Led a team of 4 members to design and develop a 2D platformer game that aimed to educate the public on the effects of global pollution on Earth's oceans. 
-    Responsible for level design, core game engine features in Unity, and provided mentorship to group members on with Agile / Scrum 
+    description: `Led a team of 4 members to design and develop a 2D platformer game that aims to educate the public on the effects of global pollution on Earth's oceans. 
+    Responsible for level design, core game engine features in Unity, and providing mentorship to group members on with Agile / Scrum 
     methodologies, version control, pull requests, and testing.`,
   },
 ];
