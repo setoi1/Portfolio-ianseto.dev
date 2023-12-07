@@ -13,7 +13,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
   font-size: 100%;
   font-weight: 750;
-  text-transform: lowercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
