@@ -11,8 +11,9 @@ export default function Landing() {
   }
   return (
     <section className='landing'>
+      {mobile && <img src='Ian_Seto.png' width='100%' height='100%' />}
       <div className='landing-wrapper'>
-        {mobile && <img src='Ian_Seto.png' width='100%' height='100%' />}
+        <h1 className='landing-header'>Hi, I'm Ian.</h1>
         <h2 className='landing-headline'>Software Engineer.</h2>
         <p className='landing-introduction'>I'm passionate about developing and designing engaging, intricate, scalable, and robust software.</p>
         <ul className='landing-contacts-list'>
