@@ -4,28 +4,16 @@ html {
 
 body {
   margin: 0;
-<<<<<<< HEAD
-  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;;
-=======
-  font-family: -apple-system, BlinkMacSystemFont, 'Major Mono Display', monospace;
->>>>>>> 49665a5 (new changes to styling)
+  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
   font-size: 100%;
   font-weight: 750;
-  text-transform: lowercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
-<<<<<<< HEAD
   background-color: #3B1F2B;
   color: white;
-=======
-  background: linear-gradient(-45deg, #0E1C26, #2A454B, #294861);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-  color: rgb(219, 219, 219);
->>>>>>> 49665a5 (new changes to styling)
 }
 
 @keyframes gradient {
