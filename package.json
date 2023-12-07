@@ -21,11 +21,6 @@
     "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-=======
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
->>>>>>> 8971711 (removed mui and mui icons)
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
