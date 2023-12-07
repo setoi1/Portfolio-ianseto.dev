@@ -14,9 +14,7 @@ export default function App() {
   
   return (
     <div className='App'>
-      {isMobile &&
-        <Navbar />
-      }
+      {isMobile && <Navbar />}
       <div className='wrapper'>
         <div className='left-column'>
           <Landing />

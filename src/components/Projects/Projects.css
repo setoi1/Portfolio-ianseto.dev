@@ -5,12 +5,10 @@
 }
 
 .projects-wrapper {
-  display: flex;
-  flex-direction: column;
+  
 }
 
   .projects-wrapper > h2 {
-    font-family: 'Cairo';
     font-size: 3em;
   }
 
@@ -47,7 +45,7 @@
         .projects-list > a:hover
         .projects-list > a:active {
           width: 100%;
-          color: rgb(219, 219, 219);
+          color: white;
           text-decoration: none;
         }
 
@@ -55,10 +53,14 @@
         text-decoration: none;
       }
 
+.text-here {
+  
+}
+
 @media screen and (min-width: 1366px) {
   .projects {
-    margin-left: 5%;
-    margin-right: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
     .projects-content {
@@ -72,7 +74,7 @@
       }
 
       .project-item:hover {
-        background-color: rgba(85, 253, 183, 0.445);
+        background-color: #FDE74C;
         transition: .25s;
       }
 
@@ -81,4 +83,8 @@
         display: flex;
         justify-content: right;
       }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+
 }

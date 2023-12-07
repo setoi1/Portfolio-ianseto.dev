@@ -4,9 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Trebuchet MS', 'Futura',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;;
   font-size: 100%;
   font-weight: 750;
   -webkit-font-smoothing: antialiased;
@@ -14,8 +12,8 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  background-color: #1B1C1E;
-  color: rgb(219, 219, 219);
+  background-color: #3B1F2B;
+  color: white;
 }
 
 body::-webkit-scrollbar {

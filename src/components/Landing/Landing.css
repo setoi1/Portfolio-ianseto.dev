@@ -1,24 +1,20 @@
 .landing {
-  margin-left: 10%;
-  margin-right: 10%;
+
 }
 
   .landing-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
     .landing-header {
       margin-top: 0;
       margin-bottom: 0;
-      color: white;
       font-size: 3em;
     }
 
     .landing-headline {
       margin-top: 0;
-      color: white;
       font-size: 2em;
     }
 
@@ -44,13 +40,12 @@
       }
   
         .landing-contacts-item-link {
-          color: rgb(219, 219, 219);
+          color: white;
         }
           
 @media screen and (min-width: 1366px) {
   .landing {
     width: 50%;
-    margin-left: 25%;
     margin-right: 0;
   }
 
@@ -64,20 +59,22 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      color: white;
     }
 
       .landing-header {
+        white-space: nowrap;
         margin: 0;
         font-size: 5em;
       }
       
       .landing-headline {
+        white-space: nowrap;
         margin: 0;
         font-size: 3em;
       }
 
     .landing-introduction {
+      font-size: 1.25em;
       margin-right: 25%;
     }
 
@@ -100,7 +97,7 @@
 
         .landing-contacts-item-link {
           display: flex;
-          color: white;
+          font-size: 1.5em;
         }
 
         img {
@@ -112,8 +109,9 @@
         }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 641px) and (max-width: 1365px) {
   .landing {
+    margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;

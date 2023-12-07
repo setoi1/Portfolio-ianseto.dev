@@ -17,7 +17,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 10rem;
-    background-color: #D2CCCB;
+    background-color: white;
     backdrop-filter: blur(.5rem);
   }
 
@@ -31,7 +31,7 @@
       .nav-link {
         display: inline-block;
         position: relative;
-        height: 24px;
+        height: 1.25rem;
         padding-top: 8px;
         padding-bottom: 8px;
         text-decoration: none;
@@ -54,7 +54,7 @@
           height: 2px;
           left: 50%;
           position: absolute;
-          background:black;;
+          background:black;
           transition: width 0.3s ease 0s, left 0.3s ease 0s;
           width: 0;
         }
