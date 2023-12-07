@@ -3,11 +3,6 @@ import './Navbar.css';
 
 const navLinks = [
   {
-    id: -1,
-    text: 'Home',
-    section: '#about',
-  },
-  {
     id: 0,
     text: 'About',
     section: '#about',
@@ -19,7 +14,7 @@ const navLinks = [
   },
   {
     id: 2,
-    text: 'Projects',
+    text: 'Work',
     section: '#projects',
   },
 ];
