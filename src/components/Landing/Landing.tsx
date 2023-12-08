@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa6";
 
 import './Landing.css';
