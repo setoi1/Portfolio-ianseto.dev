@@ -107,9 +107,7 @@ export default function Projects() {
                 <hr></hr>
                 <a href={project.link}>
                   <li key={project.id} className='project-item'>
-                    <div className='text-here'>
-                      {project.name}
-                    </div>
+                    {project.name}
                   </li>
                 </a>
               </>
