@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --red: #DB162F;
+  --purple: #3B1F2B;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;

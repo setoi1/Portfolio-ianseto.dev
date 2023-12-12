@@ -1,10 +1,14 @@
+import { FaAngleRight, FaAngleDown } from 'react-icons/fa6';
+
 import './Projects.css';
+
+import { useState } from 'react';
 
 const projects = [
   {
     id: 0,
     image: 'SwiftAPI.png',
-    name: 'SwiftAPI',
+    name: 'SwiftAPI Marketplace',
     description: 'A platform for developers to monetize their APIs and for users to purchase APIs in just a few clicks. Provides analytics, monitoring, and loggin features.',
     techStack: [
       {
@@ -49,7 +53,7 @@ const projects = [
   },
   {
     id: 2,
-    image: 'Stock.png',
+    image: '',
     name: 'Million Ether Page',
     description: '',
     techStack: [
@@ -75,7 +79,7 @@ const projects = [
   {
     id: 3,
     image: 'Stock.png',
-    name: 'Stock Market Bot',
+    name: 'Stock Market Discord Bot',
     description: 'A bot to display user-requested stock information such as news, prices, and company information.',
     techStack: [
       {
@@ -96,6 +100,17 @@ const projects = [
 ];
 
 export default function Projects() {
+  const [isExpanded, setExpanded] = useState(false);
+  function handleExpand() {
+    console.log('expand')
+    setExpanded(true);
+  }
+
+  function handleClose() {
+    console.log('close');
+    setExpanded(false);
+  }
+
   return (
     <section id='projects' className='projects'>
       <div className='projects-wrapper'>
@@ -104,11 +119,33 @@ export default function Projects() {
           <ul className='projects-list'>
             {projects.map(project => 
               <>
-                <hr></hr>
-                <a href={project.link}>
+                <hr />
+                <a 
+                  key={project.id} 
+                  className='project-link' 
+                  /*
+                  href={project.link}
+                  rel='noreferrer'
+                  target='blank'
+                  */
+                >
                   <li key={project.id} className='project-item'>
                     {project.name}
+                    {!isExpanded ? 
+                      (<button className='project-item-button' onClick={handleExpand}>
+                        <FaAngleRight className='project-expand' />
+                      </button>) 
+                      : 
+                      (<button className='project-item-button' onClick={handleClose}>
+                        <FaAngleDown className='project-expand' />
+                      </button>)
+                    }
                   </li>
+                  {isExpanded && (
+                    <div className='hello'>
+                      hello
+                    </div>
+                  )}
                 </a>
               </>
             )}
@@ -119,7 +156,7 @@ export default function Projects() {
           rel='noreferrer' 
           target='_blank' 
         >
-          View All Projects
+          View my other projects on GitHub
         </a>
       </div>
     </section>

@@ -20,6 +20,7 @@ const navLinks = [
     text: 'Work',
     section: '#projects',
   },
+  /*
   {
     id: 3,
     className: 'nav-icon',
@@ -32,6 +33,7 @@ const navLinks = [
     text: <FaGithub />,
     section:'https://www.github.com/setoi1',
   },
+  */
 ];
 
 export default function Navbar() {
@@ -40,12 +42,13 @@ export default function Navbar() {
       <nav className='navbar'>
         <ul className='nav-list'>
           {navLinks.map((navLink) => (
-            <li key={navLink.id} className='nav-item'>
-              <a className={navLink.className} href={navLink.section}>
+            <a key={navLink.id} className={navLink.className} href={navLink.section} >
+              <li key={navLink.id} className='nav-item'>
                 {navLink.text}
-              </a>
-            </li>
+              </li>
+            </a>
           ))}
+          
         </ul>
       </nav>
     </header>

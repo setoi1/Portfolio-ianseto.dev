@@ -14,7 +14,7 @@ export default function Landing() {
       <div className='landing-wrapper'>
         <h1 className='landing-header'>Hi, I'm Ian.</h1>
         <h2 className='landing-headline'>Software Engineer.</h2>
-        <p className='landing-introduction'>I'm passionate about developing and designing engaging, intricate, scalable, and robust software.</p>
+        <p className='landing-introduction'>I'm passionate about designing and developing engaging, elegant, scalable, and robust software.</p>
         <ul className='landing-contacts-list'>
           <li className='landing-contacts-list-item'>
             <a 
