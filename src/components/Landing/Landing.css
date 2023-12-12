@@ -110,7 +110,7 @@
 
 @media screen and (min-width: 600px) and (max-width: 1365px) {
   .landing {
-    margin: 0 10% 0 10%;
+    margin: 50% 10% 0 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,5 +149,8 @@
   img {
     max-width: 375px;
     height: auto;
+    display: flex;
+    justify-self: center;
+    align-self: center;
   }
 }
