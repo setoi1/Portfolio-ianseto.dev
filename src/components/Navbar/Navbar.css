@@ -1,65 +1,56 @@
-.navbar {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  height: 5rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-  .nav-list {
+@media screen and (min-width: 600px) {
+  .navbar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100%;
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding-left: 0;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 10rem;
-    background-color: white;
-    backdrop-filter: blur(.5rem);
+    align-items: center;
   }
-
-    .nav-item {
+  
+    .nav-list {
+      height: 3rem;
+      width: 36rem;
+      margin-top: 0;
+      margin-bottom: 0;
       display: flex;
+      justify-content: space-evenly;
       align-items: center;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      list-style: none;
+      padding-left: 0;
+      border-radius: 10rem;
+      background-color: white;
+      backdrop-filter: blur(.5rem);
     }
 
-      .nav-link {
-        display: inline-block;
-        position: relative;
-        height: 1.25rem;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        text-decoration: none;
-        font-size: 1.05em;
-        color:black;
-        opacity: 0.75;
+      .nav-item {
+        padding: .25rem .75rem .25rem .75rem;
+        border-radius: 2rem;
         transition-duration: 250ms;
       }
 
-        .nav-link:hover {
-          opacity: 1.0;
+      .nav-item:hover {
+        background-color: rgb(216, 216, 216);
+        transition-duration: 250ms;
+      }
+  
+        .nav-link {
+          text-decoration: none;
+          font-size: 1.25em;
+          color: black;
           transition-duration: 250ms;
         }
-
-        .nav-link:after {
-          background: none repeat scroll 0 0 transparent;
-          bottom: 0;
-          content: "";
-          display: block;
-          height: 2px;
-          left: 50%;
-          position: absolute;
-          background:black;
-          transition: width 0.3s ease 0s, left 0.3s ease 0s;
-          width: 0;
+    
+          .nav-link:hover {
+            opacity: .75;
+            transition-duration: 250ms;
+          }
+    
+        .nav-icon {
+          display: flex;
+          font-size: 1.25em;
+          color: black;
         }
-
-        .nav-link:hover:after {
-          width: 100%; 
-          left: 0; 
-        }
+}

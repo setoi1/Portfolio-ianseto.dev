@@ -3,14 +3,14 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa6";
 import './Landing.css';
 
 export default function Landing() {
-  let mobile = false;
+  let isMobile = false;
 
   if (window.innerWidth < 600) {
-    mobile = true;
+    isMobile = true;
   }
   return (
     <section className='landing'>
-      {mobile && <img src='Ian_Seto.png' width='100%' height='100%' />}
+      {isMobile && <img src='Ian_Seto.png' width='100%' height='100%' />}
       <div className='landing-wrapper'>
         <h1 className='landing-header'>Hi, I'm Ian.</h1>
         <h2 className='landing-headline'>Software Engineer.</h2>
@@ -48,7 +48,7 @@ export default function Landing() {
           </li>
         </ul>
       </div>
-      {!mobile && <img src='Ian_Seto.png' />}
+      {!isMobile && <img src='Ian_Seto.png' />}
     </section>
   );
 }

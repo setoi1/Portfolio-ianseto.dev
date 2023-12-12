@@ -69,36 +69,35 @@
       margin-top: 0;
     }
 
-  
-    .experience-item {
-      
-    }
-
-    .experience-item > h4 {
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: .75em;
-    }
-
-    .experience-item > h5 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: .675em;
-    }
-
-    .experience-item > h6 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: .50em;
-    }
-
-    .experience-item > p {
-      font-size: .375em;
-    }
-
-      .experience-item > a {
-        color: white;
+      .experience-item:last-child {
+        margin-bottom: 0;
       }
+
+      .experience-item > h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: .75em;
+      }
+
+      .experience-item > h5 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: .675em;
+      }
+
+      .experience-item > h6 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: .50em;
+      }
+
+      .experience-item > p {
+        font-size: .375em;
+      }
+
+        .experience-item > a {
+          color: white;
+        }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {

@@ -1,0 +1,26 @@
+@media screen and (min-width: 1366px) {
+  .circle-container {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle-left {
+    height: 180px;
+    width: 90px;
+    background-color: #DB162F;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
+  }
+  
+  .circle-right {
+    height: 180px;
+    width: 90px;
+    background-color: #3B1F2B;
+    border-radius: 0 100% 100% 0/0 50% 50% 0;
+  }
+}
