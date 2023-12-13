@@ -2,12 +2,28 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa6";
 
 import './Landing.css';
 
+const contacts = [
+  {
+    href: 'mailto:i.seto00@gmail.com',
+    icon: <FaEnvelope />,
+  },
+  {
+    href: 'https://www.linkedin.com/in/ianseto',
+    icon: <FaLinkedin />,
+  },
+  {
+    href: 'https://www.github.com/setoi1',
+    icon: <FaGithub />,
+  },
+]
+
 export default function Landing() {
   let isMobile = false;
 
   if (window.innerWidth < 600) {
     isMobile = true;
   }
+
   return (
     <section className='landing'>
       {isMobile && <img src='Ian_Seto.png' width='100%' height='100%' />}
@@ -16,36 +32,18 @@ export default function Landing() {
         <h2 className='landing-headline'>Software Engineer.</h2>
         <p className='landing-introduction'>I'm passionate about designing and developing engaging, elegant, scalable, and robust software.</p>
         <ul className='landing-contacts-list'>
-          <li className='landing-contacts-list-item'>
-            <a 
-              className='landing-contacts-item-link' 
-              href='mailto:i.seto00@gmail.com' 
-              rel='noreferrer' 
-              target='_blank'
-            >
-              <FaEnvelope />
-            </a>
-          </li>
-          <li className='landing-contacts-list-item'>
-            <a 
-              className='landing-contacts-item-link' 
-              href='https://www.linkedin.com/in/ianseto' 
-              rel='noreferrer' 
-              target='_blank'
-            >
-              <FaLinkedin />
-            </a>
-          </li>
-          <li className='landing-contacts-list-item'>
-            <a 
-              className='landing-contacts-item-link' 
-              href='https://www.github.com/setoi1' 
-              rel='noreferrer' 
-              target='_blank'
-            >
-              <FaGithub className='github-icon'/>
-            </a>
-          </li>
+          {contacts.map(contact => 
+            <li className='landing-contacts-list-item'>
+              <a 
+                className='landing-contacts-item-link' 
+                href={contact.href} 
+                rel='noreferrer' 
+                target='_blank'
+              >
+                {contact.icon}
+              </a>
+            </li>
+          )}
         </ul>
       </div>
       {!isMobile && <img src='Ian_Seto.png' />}
