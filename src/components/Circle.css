@@ -2,25 +2,34 @@
   .circle-container {
     z-index: 1;
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: .25s;
+  }
+
+  .rotation-wrapper {
+    display: flex;
+    transform-origin: center;
   }
   
   .circle-left {
-    height: 180px;
-    width: 90px;
-    background-color: #DB162F;
+    height: 12rem;
+    width: 6rem;
+    background-color: var(--red);
     border-radius: 100% 0 0 100%/50% 0 0 50%;
+    border-top: 2px var(--yellow) solid;
+    border-bottom: 2px var(--yellow) solid;
+    border-left: 2px var(--yellow) solid;;
   }
   
   .circle-right {
-    height: 180px;
-    width: 90px;
-    background-color: #3B1F2B;
+    height: 12rem;
+    width: 6rem;
+    background-color: var(--purple);
     border-radius: 0 100% 100% 0/0 50% 50% 0;
+    border-top: 2px var(--yellow) solid;
+    border-bottom: 2px var(--yellow) solid;
+    border-right: 2px var(--yellow) solid;
   }
 }

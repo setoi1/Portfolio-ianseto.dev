@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3B1F2B;
+    background-color: var(--purple);
   }
 
   .right-column {
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #DB162F;
+    background-color: var(--red);
     color: white;
   }
 }
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3B1F2B;
+    background-color: var(--purple);
   }
 
   .right-column {
@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #DB162F;
+    background-color: var(--red);
   }
 }
   

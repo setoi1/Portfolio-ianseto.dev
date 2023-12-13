@@ -16,16 +16,14 @@ export default function App() {
   return (
     <div className='App'>
       {!isMobile && <Navbar />}
-      <div className='wrapper'>
-        {!isMobile && <Circle />}
-        <div className='left-column'>
-          <Landing />
-        </div>
-        <div className='right-column'>
-          <About />
-          <Experience />
-          <Projects />
-        </div>
+      {!isMobile && <Circle />}
+      <div className='left-column'>
+        <Landing />
+      </div>
+      <div className='right-column'>
+        <About />
+        <Experience />
+        <Projects />
       </div>
     </div>
   );
