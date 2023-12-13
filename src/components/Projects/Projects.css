@@ -79,17 +79,6 @@
       }
 
 @media screen and (min-width: 1366px) {
-  .hello {
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    transition-duration: .5s;
-  }
-
-  .hello:active {
-    transition-duration: .5s;
-  }
-
   .projects {
     margin-left: 25%;
     margin-right: 25%;
@@ -143,6 +132,17 @@
 
         .project-item-button:hover {
           cursor: pointer;
+        }
+        
+        .project-expanded {
+          width: 100%;
+          height: 100px;
+          background-color: white;
+          transition-duration: .5s;
+        }
+      
+        .project-expanded:active {
+          transition-duration: .5s;
         }
 }
 

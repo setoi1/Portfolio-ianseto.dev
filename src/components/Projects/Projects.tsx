@@ -100,6 +100,7 @@ const projects = [
 ];
 
 export default function Projects() {
+  /*
   const [isExpanded, setExpanded] = useState(false);
   function handleExpand() {
     console.log('expand')
@@ -110,6 +111,7 @@ export default function Projects() {
     console.log('close');
     setExpanded(false);
   }
+  */
 
   return (
     <section id='projects' className='projects'>
@@ -123,14 +125,13 @@ export default function Projects() {
                 <a 
                   key={project.id} 
                   className='project-link' 
-                  /*
                   href={project.link}
                   rel='noreferrer'
                   target='blank'
-                  */
                 >
                   <li key={project.id} className='project-item'>
                     {project.name}
+                    {/*
                     {!isExpanded ? 
                       (<button className='project-item-button' onClick={handleExpand}>
                         <FaAngleRight className='project-expand' />
@@ -140,12 +141,13 @@ export default function Projects() {
                         <FaAngleDown className='project-expand' />
                       </button>)
                     }
+                  */}
                   </li>
+                  {/*
                   {isExpanded && (
-                    <div className='hello'>
-                      hello
-                    </div>
+                    <ProjectExpanded /> goes here
                   )}
+                  */}
                 </a>
               </>
             )}
