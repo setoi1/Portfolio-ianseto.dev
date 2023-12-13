@@ -65,16 +65,29 @@
 
       .landing-header {
         white-space: nowrap;
+<<<<<<< HEAD
         font-size: 4em;
+=======
+
+        font-size: 6em;
+>>>>>>> 0c4ee45 (polished newer elements)
       }
       
       .landing-headline {
         white-space: nowrap;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0c4ee45 (polished newer elements)
         font-size: 3em;
       }
 
     .landing-introduction {
+<<<<<<< HEAD
       font-size: 1em;
+=======
+      font-size: 1.5em;
+>>>>>>> 0c4ee45 (polished newer elements)
       margin-right: 25%;
     }
 
@@ -110,7 +123,7 @@
 
 @media screen and (min-width: 600px) and (max-width: 1365px) {
   .landing {
-    margin: 50% 10% 0 10%;
+    margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,8 +162,5 @@
   img {
     max-width: 375px;
     height: auto;
-    display: flex;
-    justify-self: center;
-    align-self: center;
   }
 }
